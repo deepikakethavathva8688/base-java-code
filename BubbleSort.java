@@ -1,23 +1,17 @@
-public class BubbleSort {
+public class BubbleSort{
     public static void main(String[] args) {
+        int[]  arr = {4,9,5,3,8,3,2,7,1,6};
 
-        int[] arr = {93, 4, 48, 71, 23};
-
-        for (int i = 0; i < arr.length - 1; i++) {
-
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-
-                if (arr[j] > arr[j + 1]) {
-
+        for(int i = 0 ; i < arr.length - 1 ; i++) {
+            for(int j = 0 ; j < arr.length - 1 - i; j++) {
+                if(arr[j] > arr[j+1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                 }
             }
         }
-
-        // Print array
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length ; i++) {
             System.out.print(arr[i] + " ");
         }
     }
