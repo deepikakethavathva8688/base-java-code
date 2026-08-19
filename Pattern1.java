@@ -1,11 +1,17 @@
 public class Pattern1 {
-    public static void main (String[] ages) {
-        int  n  = 5;
-
-        for ( int i = 1;i <=n;i++) {
-            for( int j = 1; j   <=n-i+1; j++){
-                System.out.print("*");
-            }  System.out.println();
+    public static void main(String[] agrs) {
+        int n = 5;
+        for(int row = 0; row <= n; row++) {
+            
+            // spaces
+            for(int col = 0; col <= n-row; col++) {
+                System.out.print("  ");
+            }
+            //start
+            for(int col = 0; col <= n;col++) {
+                System.out.print(" * ");
+            } System.out.println();
+           
         }
-     }
+    }
 }
